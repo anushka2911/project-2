@@ -1,0 +1,238 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.body1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    height:38rem;
+    width:60rem;
+    background-color:aliceblue;
+
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+}
+
+.item1{
+    padding:1cm;
+}
+
+.item1 h2{
+    font-family: 'Ubuntu';
+    font-size: 0.9cm;
+    text-align: center;
+    margin:0.5cm;
+}
+
+#colorib{
+    font-weight: bold;
+    color:coral;
+}
+
+.item1 p{
+    font-size: 0.57cm;
+    font-family: 'Roboto';
+    font-weight: bold;
+}
+input{
+    margin-top:0.3cm;
+    margin-bottom: 0.2cm;
+    height:1.3cm;
+    width: 11cm;
+    border: none;
+    border-radius: 0.2cm;
+}
+input[placeholder]{
+    font-family: 'Roboto';
+    font-weight: lighter;
+    font-size: 0.4cm;
+    color:rgba(128, 128, 128, 0.199);
+    padding:0.3cm;
+}
+.pswd{
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+}
+#forgot p{
+font-size: 0.4cm;
+position: relative;
+top:-0.9cm;
+left:-1.5cm;
+
+}
+input[type="checkbox"] {
+    width:0.5cm;
+    position: relative;
+top:0.5cm;
+left:0.3cm;
+
+}
+#forgot{
+    display: flex;
+    flex-direction: row;
+}
+
+.pswd a{
+    font-size: 0.4cm;
+    text-decoration: none;
+    position:relative;
+    top:-0.39cm;
+    left:1.4cm;
+    font-family: 'Roboto';  
+    font-weight: bolder;
+    color:black;
+
+}
+.btn1 button{
+    background-color: #fb771a;
+    border:1px solid #fa710e;
+}
+.btn2 button{
+    background-color:#3b5998 ;
+    border:1px solid  #284585;
+}
+
+.btn3 button{
+    background-color: #ea4335;
+    border:1px solid #b92f22;
+    
+}
+.btn1 button,
+.btn2 button,
+.btn3 button{
+    margin-top: 0.3cm;
+    width:11cm;
+    height:1cm;
+    color:white;
+    border-radius: 0.1cm;
+    font-size: 0.5cm;
+    font-family: 'Roboto';
+    font-weight: bolder;
+}
+button:hover{
+    cursor: pointer;
+
+}
+.btn3 button{
+    margin-top: 0.1cm;
+}
+
+span#centre{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.fa-google,
+.fa-facebook{
+    color: white;
+}
+
+.item2 img{
+    height:21cm;
+    width:17cm;
+    position: relative;
+    top:0cm;
+    left:-2cm;
+}
+
+.item2{
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+@media (min-width:300px) and (max-width:500px){
+    .body1{
+        margin:1cm;
+    }
+     .container{
+         background-color: #e6e6fa57;
+        width:33rem;
+        height:47rem;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .item1{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input{
+        width:8cm;
+    }
+    .btn1 button, .btn2 button, .btn3 button{
+        width:8cm;
+    }
+    #forgot p{
+        font-size: 0.4cm;
+        position: relative;
+        top: -0.9cm;
+        left: -1cm;
+    }
+
+    .item2 img{
+        position: relative;
+        top:0cm;
+        left:6cm;
+        width:5cm;
+        height:5cm;
+    }
+}
+
+
+@media (min-width:501px) and (max-width:800px){
+    .container{
+        background-color: #faebd754;
+        width:12cm;
+        height:20cm;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .item1{
+        padding:0.6cm;
+
+    }
+    .item2{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .item2 img{
+        height:6cm;
+        width:7cm;
+        
+    }
+}
+
+
+@media (min-width:801px) and (max-width:1024px){
+    body{
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    .item1{
+        margin:0.8cm;
+        padding-left: 2cm;
+        padding-top: 0cm;
+        margin-top: 0.6cm;
+    }
+    .item2 img{
+        height:100%;
+        padding-right:2cm;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+}
